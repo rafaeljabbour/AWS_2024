@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,8 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "aws-amplify": "^6.10.0"
+    "aws-amplify": "^6.10.0",
+    "aws-sdk": "^2.1692.0",
+    "react-scripts": "^5.0.1"
   }
 }
