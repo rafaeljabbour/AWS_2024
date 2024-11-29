@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-htsl2024-dev-a515a-authRole",
+      "UnauthRoleArn": "arn:aws:iam::529567419391:role/amplify-htsl2024-dev-a515a-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::529567419391:role/amplify-htsl2024-dev-a515a-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-htsl2024-dev-a515a-deployment",
+      "UnauthRoleName": "amplify-htsl2024-dev-a515a-unauthRole",
+      "StackName": "amplify-htsl2024-dev-a515a",
+      "StackId": "arn:aws:cloudformation:us-west-2:529567419391:stack/amplify-htsl2024-dev-a515a/5ff51eb0-ae6e-11ef-b269-026794e52343",
+      "AmplifyAppId": "d38nn1uv3fw1yl"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d38nn1uv3fw1yl",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
