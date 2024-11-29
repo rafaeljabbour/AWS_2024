@@ -36,8 +36,8 @@ stop_words = set(stopwords.words('english'))
 keywords = [word for word in tokens if word.lower() not in stop_words]
 keywords.extend(key_phrases)
 
-print("Extracted keywords: ", keywords)
-print("Key Phrases:", key_phrases)
+# print("Extracted keywords: ", keywords)
+# print("Key Phrases:", key_phrases)
 
 #########
 
@@ -49,14 +49,27 @@ for phrase in key_phrases:
 matching_events = list({event['title']: event for event in matching_events}.values())
 
 if matching_events:
-    print(f"Found {len(matching_events)} event(s):")
-    for event in matching_events:
-        print(f"Title: {event['title']}")
-        print(f"Description: {event['description']}")
-        print(f"Date: {event['date']}")
-        print(f"Location: {event['location']}\n")
+    # Convert matching events to JSON-compatible format
+    return json.dumps({
+        "status": "success",
+        "message": f"Found {len(matching_events)} event(s)",
+        "events": matching_events
+    })
 else:
-    print("No events found matching your query.")
+    # Return no events found
+    return json.dumps({
+        "status": "error",
+        "message": "No events found matching your query"
+    })
+# if matching_events:
+#     print(f"Found {len(matching_events)} event(s):")
+#     for event in matching_events:
+#         print(f"Title: {event['title']}")
+#         print(f"Description: {event['description']}")
+#         print(f"Date: {event['date']}")
+#         print(f"Location: {event['location']}\n")
+# else:
+#     print("No events found matching your query.")
 
 
 ###################################################################
