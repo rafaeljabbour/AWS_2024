@@ -4,7 +4,7 @@ import nltk
 from nltk.corpus import stopwords
 
 # Load the data from the events JSON file
-with open(r'C:\Users\mijan\Desktop\Folder of folders\AWS2024\HTSL_2024\example_events.json', 'r') as file:
+with open(r'\example_events.json', 'r') as file:
     events_data = json.load(file)
 
 # nltk.download('stopwords')
